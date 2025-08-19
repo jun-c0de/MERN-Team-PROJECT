@@ -1,0 +1,32 @@
+.BucketItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.BucketItem span {
+  flex: 1;
+}
+
+.BucketItem button {
+  margin-left: 6px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.BucketItem button:first-of-type {
+  background-color: #4caf50; /* 완료 */
+  color: white;
+}
+
+.BucketItem button:last-of-type {
+  background-color: #f44336; /* 삭제 */
+  color: white;
+}
