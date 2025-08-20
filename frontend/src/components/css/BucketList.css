@@ -1,14 +1,4 @@
-.BucketList {
-  margin: 20px 0;
-}
+.BucketList{ margin-top: 8px; }
+.BucketList h2{ font-size: 18px; margin-bottom: 10px; }
 
-.BucketList h2 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.BucketList ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+.BucketList ul{ display: grid; gap: 10px; }

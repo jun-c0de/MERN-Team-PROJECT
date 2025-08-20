@@ -2,13 +2,17 @@
 import "./App.css";
 import BucketForm from "./components/BucketForm";
 import BucketList from "./components/BucketList";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>익명 버킷리스트</h1>
-      <BucketForm />
-      <BucketList />
+      <div className="app-card">
+        <Header />
+
+        <BucketForm />
+        <BucketList />
+      </div>
     </div>
   );
 }

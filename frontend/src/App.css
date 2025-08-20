@@ -1,17 +1,32 @@
 .App {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: "Arial", sans-serif;
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 760px;
+  margin: 64px auto;
+  padding: 0 22px;
 }
 
-.App h1 {
+/* 카드: 심플 & 깔끔 */
+.app-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 32px 28px;
+}
+
+/* 타이틀: 또렷하고 읽기 쉬운 스타일 */
+.app-title {
+  font-size: 28px;
+  font-weight: 800;
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 12px;
+  color: #1f2937; /* 진한 회색 */
+}
+
+/* 서브 텍스트: 차분한 톤 */
+.app-sub {
+  text-align: center;
+  font-size: 15px;
+  color: #6b7280; /* 중간 회색 */
+  margin-bottom: 24px;
+  line-height: 1.4;
 }

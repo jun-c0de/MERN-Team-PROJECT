@@ -1,4 +1,5 @@
 import BucketItem from "./BucketItem";
+import "./css/BucketList.css"
 
 function BucketList() {
   return (
