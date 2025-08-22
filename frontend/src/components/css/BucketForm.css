@@ -14,7 +14,9 @@
   gap: 10px;
 }
 
-.bf-input {
+/* 공통 입력/선택 스타일 */
+.bf-input,
+.bf-select {
   flex: 1;
   padding: 12px 14px;
   border: 1px solid var(--border, #e5e7eb);
@@ -25,7 +27,59 @@
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.bf-input:focus {
+/* select 전용 */
+.bf-select {
+  max-width: 120px;
+  cursor: pointer;
+  appearance: none;              /* 기본 화살표 제거 */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+}
+
+.bf-input::placeholder {
+  color: #9ca3af;
+}
+
+.bf-input:focus,
+.bf-select:focus {
   border-color: var(--accent-strong, #34d399);
   box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
+}
+
+/* 버튼 */
+.btn {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--accent, #6ee7b7);
+  border: none;
+  color: #053;
+}
+
+/* select 박스 글씨 가운데 정렬 */
+.bf-form select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'GmarketSansMedium', sans-serif; 
+  height: 44px; /* input 높이에 맞춤 */
+  padding: 0 12px;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+  cursor: pointer;
+}
+
+/* option도 가운데 정렬 */
+.bf-form select option {
+  text-align: center;
+  font-family: 'GmarketSansMedium', sans-serif;
 }
