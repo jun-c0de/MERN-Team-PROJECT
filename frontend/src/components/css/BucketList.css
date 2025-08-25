@@ -1,4 +1,41 @@
-.BucketList{ margin-top: 8px; }
-.BucketList h2{ font-size: 18px; margin-bottom: 10px; }
+.BucketList {
+    margin-top: 8px;
+}
 
-.BucketList ul{ display: grid; gap: 10px; }
+.BucketList h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 검색 input 추가 */
+.BucketList input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    color: #111827;
+    box-sizing: border-box;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.BucketList input[type="text"]:focus {
+    border-color: #3b82f6;
+    /* 포커스 시 파란색 강조 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+.BucketList ul {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.BucketList li {
+    margin-bottom: 12px;
+}

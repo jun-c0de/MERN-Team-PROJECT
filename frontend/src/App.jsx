@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const fetchBuckets = async () => {
       try {
-        await ensureGuestAuth(); // 게스트 인증 체크
+        // await ensureGuestAuth(); // 게스트 인증 체크
         const res = await api.get("/api/buckets");
         const data = Array.isArray(res.data)
           ? res.data
