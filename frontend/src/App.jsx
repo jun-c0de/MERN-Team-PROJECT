@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import "./api/bucket"
 import BucketForm from "./components/BucketForm";
 import BucketList from "./components/BucketList";
 import Header from "./components/Header";
@@ -19,7 +20,7 @@ function App() {
   useEffect(() => {
     const fetchBuckets = async () => {
       try {
-        // await ensureGuestAuth(); // 게스트 인증 체크
+        await ensureGuestAuth(); // 게스트 인증 체크
         const res = await api.get("/api/buckets");
         const data = Array.isArray(res.data)
           ? res.data
