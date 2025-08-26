@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const mongoose = require("mongoose")
-const Bucket = require("../models/bucket")
+const Bucket = require("../models/Bucket")
 
 const ensureObjectId = (id, res) => {
     if (!mongoose.isValidObjectId(id)) {
